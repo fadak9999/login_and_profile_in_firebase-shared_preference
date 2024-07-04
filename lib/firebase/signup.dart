@@ -1,3 +1,4 @@
+import 'package:fairbace_flutter/firebase/login.dart';
 import 'package:fairbace_flutter/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -81,7 +82,7 @@ class _signupState extends State<signup> {
   }
 
   void go_to_login() {
-    Navigator.of(context).pushReplacementNamed("login_screens");
+    Get.off(login());
   }
 
   //

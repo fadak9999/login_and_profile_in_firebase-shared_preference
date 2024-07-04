@@ -1,3 +1,4 @@
+import 'package:fairbace_flutter/firebase/signup.dart';
 import 'package:fairbace_flutter/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -60,7 +61,7 @@ class _loginState extends State<login> {
   }
 
   void go_to_signUp() {
-    Navigator.of(context).pushReplacementNamed("sinUp_screens");
+    Get.off(signup());
   }
 
   ////////
